@@ -1,10 +1,9 @@
-import { ProductList, useProducts } from ".."
+import { ProductList, useProducts } from "..";
 
 export const WomensPage = () => {
   const { isLoading, products } = useProducts({
-    filterKey: "women's clothing"
+    filterKey: "women's clothing",
   });
-
 
   return (
     <div className="flex-col">
@@ -13,7 +12,6 @@ export const WomensPage = () => {
       {isLoading && <p>Cargando...</p>}
 
       <ProductList products={products} />
-
     </div>
-  )
-}
+  );
+};

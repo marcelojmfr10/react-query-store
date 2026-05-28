@@ -1,8 +1,6 @@
-import { ProductList, useProducts } from ".."
-
+import { ProductList, useProducts } from "..";
 
 export const CompleteListPage = () => {
-
   const { isLoading, products } = useProducts({});
 
   return (
@@ -12,7 +10,6 @@ export const CompleteListPage = () => {
       {isLoading && <p>Cargando...</p>}
 
       <ProductList products={products} />
-
     </div>
-  )
-}
+  );
+};
